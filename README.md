@@ -14,14 +14,14 @@ Awesome Dialogs: Pop-up dialogs that show game results (win, lose, or draw) with
 
 # Installation
 Clone the repository:
-git clone https://github.com/yourusername/tic_tac_toe_project.git
+git clone https://github.com/yourusername/tic_tac_toe.git
 
 # Usage
 
-one-player Mode: Play with a the program.
-Two-Player Mode: Players take turns clicking on the grid to place their marks (X or O). The game alternates turns between Player 1 and Player 2.
-Animations: When a player makes a move, the mark smoothly animates onto the grid. Upon game completion, an animated dialog appears, showing whether the game ended in a win, loss, or draw.
-Awesome Dialogs: After the game ends, the dialog will pop up to notify the players of the result with animations to enhance the experience.
+  one-player Mode: Play with a the program.
+  Two-Player Mode: Players take turns clicking on the grid to place their marks (X or O). The game alternates turns between Player 1 and Player 2.
+  Animations: When a player makes a move, the mark smoothly animates onto the grid. Upon game completion, an animated dialog appears, showing whether the game ended in a win, loss, or draw.
+  Awesome Dialogs: After the game ends, the dialog will pop up to notify the players of the result with animations to enhance the experience.
 
 Pages Overview
 1. main_screen: choose the playing mode.
