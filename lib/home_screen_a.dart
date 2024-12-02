@@ -42,21 +42,24 @@ class _HomeScreenAState extends State<HomeScreenA> {
             ),
 
             const SizedBox(height: 20),
-            StartButton(
-                onTap:() {
-                  if (_formKey.currentState!.validate()) {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return GameScreenA(
-                              player: playerController.text
-                          );
-                        },
-                      ),
-                    );
-                  }
-                },
-                text:"Start Game"
+            SizedBox(
+              width: 200,
+              child:StartButton(
+                  onTap:() {
+                    if (_formKey.currentState!.validate()) {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return GameScreenA(
+                                player: playerController.text
+                            );
+                          },
+                        ),
+                      );
+                    }
+                  },
+                  text:"Start Game"
+              ),
             ),
           ],
         ),

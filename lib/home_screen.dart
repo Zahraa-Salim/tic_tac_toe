@@ -50,22 +50,25 @@ class _HomeScreenState extends State<HomeScreen> {
 
             const SizedBox(height: 20),
 
-            StartButton(
-              onTap:() {
-                if (_formKey.currentState!.validate()) {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return GameScreen(
-                          player1: player1Controller.text,
-                          player2: player2Controller.text,
-                        );
-                      },
-                    ),
-                  );
-                }
-              },
-              text:"Start Game"
+            SizedBox(
+              width: 200,
+              child:StartButton(
+                  onTap:() {
+                    if (_formKey.currentState!.validate()) {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return GameScreen(
+                              player1: player1Controller.text,
+                              player2: player2Controller.text,
+                            );
+                          },
+                        ),
+                      );
+                    }
+                  },
+                  text:"Start Game"
+              ),
             ),
           ],
         ),
